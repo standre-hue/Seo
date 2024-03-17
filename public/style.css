@@ -1,0 +1,82 @@
+body {
+    font-family: Helvetica;
+    font-size: 14px;
+    color: #5b5b5b
+}
+.header {
+    height: 50px;
+    display: grid;
+    grid-template-columns: 130px 700px; 
+}
+img {
+    width: 100px;
+    height: auto;
+    margin-right: 30px;
+    margin-top: 10px
+}
+input {
+    width: 400px;
+    height: 40px;
+    border-radius: 18px;
+    border-width: 0.5px;
+    border-color: #c4c4c4;
+    margin-right: 20px;
+    display: inline-block;
+    color: #5b5b5b;
+}
+button {
+    height: 40px;
+    width: 100px;
+    background-color: #4285f3;
+    border-color: #5b5b5b;
+    color: white;
+    font-weight: bolder;
+    border-radius: 6px;
+    border-width: 0px;
+    display: inline-block;
+}
+button:hover {
+    background-color: #5998ff}
+.line {
+    border-width: 0.5px;
+}
+form {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    display:inline-block;
+}
+.results {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.wrap {
+    margin-left: 140px;
+}
+ul {
+    padding: 0px; 
+}
+li {
+    display: inline; 
+    font-size: 12px;
+    color: #1a0dab;
+}
+.child {
+    margin-bottom: 40px;
+    width: 700px;
+}
+p {
+    justify-content: center;
+}
+a:visited {
+    color: #660099
+}
+.firstchild {
+    display: inline-block;
+}
+h2 {
+    font-size: 24px;
+    margin-top: 15px;
+}
+hr {
+    border-color:#c4c4c4;
+}

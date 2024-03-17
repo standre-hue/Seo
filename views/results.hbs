@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Titan Search</title>
+        <link rel="icon" type="images/x-icon" href="images/titan.png" />
+        <link href="/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="header">
+            <div class="firstchild">
+                <img src="/images/titan.png" />
+            </div>
+            <div class="firstchild">
+                <form>
+                    <input type="text" name="q" value="{{ q }}" />
+                    <button>Rechercher</button>
+                </form>
+            </div>
+        </div>
+        <hr class="line"/>
+        <div class="wrap">
+            <div class="results">{{ companies.length }} resultas </div>
+
+            {{#each companies}}
+                
+                <div class="child">
+                <span>{{this.links.[0].content }}</span>
+                <h2><a href="https://{{ this.links.[0].content }}/" target="_blank">{{this.name}}</a></h2>
+                <p>{{this.description}}</p>
+                <ul>
+                    {{#each this.links}}
+                    <li><a href="https://{{ this.content }}/" target="_blank">{{ this.content }}</a></li>
+                    {{/each}}
+                </ul>
+            </div>
+            {{/each}}
+
+            
+            <div class="child">
+                <span>www.w3school.com</span>
+                <h2><a href="https://www.w3schools.com/" target="_blank">Link reference in the header</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repudiandae blanditiis minus molestiae sunt magnam, accusamus omnis est? Nisi, provident commodi odit obcaecati eius beatae voluptate totam unde impedit, quia nostrum. Magni minus ipsum iure?</p>
+                <ul>
+                    <li><a href="https://www.w3schools.com/" target="_blank">First link</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">Second link</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">Third link</a></li>
+                </ul>
+            </div>
+            <div class="child">
+                <span>www.w3school.com</span>
+                <h2><a href="https://www.w3schools.com/" target="_blank">Link reference in the header</a></h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit ipsa itaque tempora, debitis voluptatem quas sed quos molestiae dolor porro voluptates magnam unde ab aut tenetur voluptatibus consectetur temporibus aliquid.</p>
+                <ul>
+                    <li><a href="https://www.w3schools.com/" target="_blank">First link</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">Second link</a></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
